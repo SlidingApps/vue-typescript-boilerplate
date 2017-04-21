@@ -1,6 +1,7 @@
 const helpers = require("./helpers"),
   DefinePlugin = require('webpack/lib/DefinePlugin'),
-  CopyWebpackPlugin = require('copy-webpack-plugin');
+  CopyWebpackPlugin = require('copy-webpack-plugin'),
+  Visualizer = require('webpack-visualizer-plugin');
 
 let config = {
   entry: {
@@ -34,6 +35,9 @@ let config = {
         'ENV': process.env.NODE_ENV,
         'NODE_ENV': process.env.NODE_ENV
       }
+    }),
+    new Visualizer({
+      filename: './statistics.html'
     })
   ]
 };

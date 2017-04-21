@@ -13,7 +13,7 @@ $ npm install -g vue-cli
 $ vue init slidingapps/vue-typescript-template my-project
 $ cd my-project
 $ npm install
-$ npm run dev
+$ npm start
 ```
 
 ### What's Included

@@ -1,5 +1,6 @@
 const helpers = require("./helpers"),
-  webpackConfig = require("./webpack.config.base")
+  DashboardPlugin = require('webpack-dashboard/plugin'),
+  webpackConfig = require("./webpack.config.base");
 
 webpackConfig.devServer = {
   port: 8080,
@@ -9,5 +10,7 @@ webpackConfig.devServer = {
   contentBase: './src',
   open: true
 };
+
+webpackConfig.plugins.push(new DashboardPlugin());
 
 module.exports = webpackConfig;

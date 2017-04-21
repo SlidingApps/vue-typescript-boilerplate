@@ -1,6 +1,6 @@
-# webpack-typescript
+# vue-typescript
 
-> A Vue 2.2 Webpack and Typescript setup with hot reload, unit testing, code coverage, sass and bundling+minification.
+> A Vue 2.2 Webpack and Typescript setup with hot reload, unit testing, code coverage, sass and bundling + minification.
 
 > This template is for Vue 2.2
 
